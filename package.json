@@ -10,6 +10,7 @@
     "test:run": "vitest run"
   },
   "devDependencies": {
+    "@vitest/browser-preview": "^4.0.16",
     "@vitest/ui": "latest",
     "vite": "latest",
     "vitest": "latest"
