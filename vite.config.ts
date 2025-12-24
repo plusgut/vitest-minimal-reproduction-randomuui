@@ -3,8 +3,12 @@
 // Configure Vitest (https://vitest.dev/config/)
 import { defineConfig } from "vite";
 import { preview } from "@vitest/browser-preview";
+import os from "node:os";
 
 export default defineConfig({
+  server: {
+    host: os.hostname(),
+  },
   test: {
     browser: {
       enabled: true,
